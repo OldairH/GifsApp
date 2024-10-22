@@ -1,1 +1,13 @@
-<p>lazy-images works!</p>
+<div class="d-flex justify-content-center">
+
+  <img [src]="url"
+       [alt]="alt"
+       class="card-img-top"
+       (load)="onload()">
+
+  <img src="assets/loader.svg"
+    height="35"
+    width="35"
+    class="mt-3">
+
+</div>
